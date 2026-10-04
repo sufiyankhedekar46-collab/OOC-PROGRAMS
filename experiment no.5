@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+
+// Function prototypes
+int area(int);
+int area(int, int);
+float area(float);
+float area(float, float);
+
+int main() {
+    int s, l, b;
+    float r, bs, ht;
+
+    cout << "Enter side of a square: ";
+    cin >> s;
+
+    cout << "Enter length & breadth of a rectangle: ";
+    cin >> l >> b;
+
+    cout << "Enter radius of a circle: ";
+    cin >> r;
+
+    cout << "Enter base & height of a triangle: ";
+    cin >> bs >> ht;
+
+    cout << "Area of a square is: " << area(s);
+
+    cout << "\nArea of a rectangle is: " << area(l, b);
+
+    cout << "\nArea of a circle is: " << area(r);
+
+    cout << "\nArea of a triangle is: " << area(bs, ht);
+
+    return 0;
+}
+
+// Area of square
+int area(int s) {
+    return (s * s);
+}
+
+// Area of rectangle
+int area(int l, int b) {
+    return (l * b);
+}
+
+// Area of circle
+float area(float r) {
+    return (3.14 * r * r);
+}
+
+// Area of triangle
+float area(float bs, float ht) {
+    return ((bs * ht) / 2);
+}
